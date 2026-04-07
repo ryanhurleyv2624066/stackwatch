@@ -41,6 +41,7 @@ stackwatch --stack my-production-stack --filter FAILED --alert email
 | `--alert` | Alert method: `email`, `slack`, or `sns` |
 | `--region` | AWS region (defaults to profile region) |
 | `--interval` | Polling interval in seconds (default: `5`) |
+| `--tail` | Number of past events to show on start (default: `0`) |
 
 > **Note:** Ensure your AWS credentials are configured via `~/.aws/credentials` or environment variables before running.
 
