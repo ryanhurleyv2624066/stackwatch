@@ -77,3 +77,14 @@ strict = false
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "--cov=stackwatch --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["src/stackwatch"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]
